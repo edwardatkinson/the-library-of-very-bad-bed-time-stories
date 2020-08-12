@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  <title></title>
+</head>
+<body>
+
+
+<div class="container-md">
+<h1>Welcome to The Library of Very Bad Bed Time Stories</h1>
+
+<form id="regForm">
+
+  <!-- One "tab" for each step in the form: -->
+
+  <div class="tab character-object">
+    <p>Your First Name, Honorable Adventurer:</p>
+    <p><input placeholder="Name" oninput="this.className = ''" autofocus></p>
+  </div>
+
+    <div class="tab character-object">
+    <p>Your Eye Color, Honorable Adventurer:</p>
+    <p><input placeholder="Color" oninput="this.className = ''" autofocus></p>
+  </div>
+
+
+  <div class="tab story-array">
+    <p>Your Vehicle, Upon Which You Traverse This World:</p>
+    <p><input placeholder="Vehicle" oninput="this.className = ''" autofocus></p>
+  </div>
+
+  <div class="tab story-array">
+    <p>An Adjective, Describing How Stylishly You Move:</p>
+    <p><input placeholder="Adjective of movement" oninput="this.className = ''" autofocus></p>
+  </div>
+
+  <div style="overflow:auto;">
+    <div style="float:right;">
+  <!--     <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+   -->    <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+          <button type="button" id="submitBtn">Submit</button>
+    </div>
+  </div>
+
+  <!-- Circles which indicates the steps of the form: -->
+  <div id="step-by-step" style="text-align:center;margin-top:40px;">
+  </div>
+
+</form>
+
+<!-- hidden story below reveals after form completes -->
+  <div class="hidden-story">
+    <p>
+      <span id="once-upon-a-time">Once upon a time</span>, there was a traveler named <span class="character-entry character-name"></span>.
+    </p>
+
+    <p>
+      His <span class="character-entry"></span> eyes looked into town on a <span class="story-entry"></span> that looked rather <span class="story-entry"></span>.
+    </p>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- run JS -->
+
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>

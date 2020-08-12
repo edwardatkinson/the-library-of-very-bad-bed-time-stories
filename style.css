@@ -1,0 +1,123 @@
+/* Universal styles */
+
+/* Body */
+body {
+  background: url("bgtile.png") 300px 300px repeat;
+
+}
+
+html, body, div, p, input, li, ul, ol, h1, h2, h3, h4, h5, h6 {
+  font-family: "Crimson Text";
+}
+
+h1 {
+  text-align: center;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 5rem;
+}
+
+
+/* copy and paste the w3c multi-step form styling */
+/* Style the form */
+#regForm {
+  background-color: #ffffff;
+  margin: 100px auto;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+
+#regForm p:first-of-type {
+  font-size: 1.4rem;
+}
+
+#regForm input {
+  font-family: "Permanent Marker";
+  font-size: 2rem;
+  padding: 20px;
+}
+
+/* Style the input fields */
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+
+  border: 1px solid #aaaaaa;
+}
+
+/* Style the NEXT and SUBMIT buttons */
+#submitBtn {
+  display: none;
+}
+
+#submitBtn, #nextBtn {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 20px;
+  width: 20px;
+  margin: 0 3px;
+  background-color: #eee;
+  border: none; 
+  border-radius: 40%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1;
+  background-color: #999;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #2ea44f;
+  border-radius: 50%;
+}
+
+/* hidden story */
+.hidden-story {
+	display: none;
+}
+
+.reveal-the-final-story {
+	display: block;
+  transform: rotate(-4deg);
+  font-size: 2rem;
+  margin-top: 100px;
+
+}
+
+.reveal-the-final-story p {
+
+}
+
+#once-upon-a-time {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.character-entry {
+  text-transform: lowercase;
+}
+
+.character-name {
+    text-transform: capitalize;
+
+}
