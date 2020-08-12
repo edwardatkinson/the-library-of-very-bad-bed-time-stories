@@ -2,12 +2,13 @@
 
 /* Body */
 body {
-  background: url("bgtile.png") 300px 300px repeat;
+  background: url("assets/bgtile.png") 300px 300px repeat;
 
 }
 
 html, body, div, p, input, li, ul, ol, h1, h2, h3, h4, h5, h6 {
   font-family: "Crimson Text";
+  color: #1a535c;
 }
 
 h1 {
@@ -29,6 +30,7 @@ h1 {
 }
 
 #regForm p:first-of-type {
+  font-family: "Roboto";
   font-size: 1.4rem;
 }
 
@@ -53,8 +55,19 @@ input {
 }
 
 #submitBtn, #nextBtn {
+  font-family: "Roboto";
   text-transform: uppercase;
-  font-weight: 700;
+  color: #f7fff7;
+  background-color: #1a535c;
+  transition: 0.5s ease;
+  border: none;
+  font-weight: 900;
+  border-radius: 25px;
+  padding: 10px 35px;
+}
+
+#submitBtn:hover, #nextBtn:hover {
+  background-color: #4ecdc4;
 }
 
 /* Mark input boxes that gets an error on validation: */
@@ -87,21 +100,24 @@ input.invalid {
 
 /* Mark the steps that are finished and valid: */
 .step.finish {
-  background-color: #2ea44f;
+  background-color: #4ecdc4;
   border-radius: 50%;
 }
 
 /* hidden story */
 .hidden-story {
-	display: none;
+	opacity: 0;
+  width: 50%;
+  margin: 0 auto;
 }
 
 .reveal-the-final-story {
 	display: block;
-  transform: rotate(-4deg);
+  transform: rotate(-3deg);
   font-size: 2rem;
   margin-top: 100px;
-
+  transition: opacity 4s ease;
+  opacity: 1;
 }
 
 .reveal-the-final-story p {
@@ -113,7 +129,7 @@ input.invalid {
   font-weight: 700;
 }
 
-.character-entry {
+.character-entry, .story-entry {
   text-transform: lowercase;
 }
 
