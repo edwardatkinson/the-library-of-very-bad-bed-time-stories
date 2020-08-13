@@ -1,0 +1,20 @@
+{
+  "name": "the-library-of-very-bad-bed-time-stories",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edwardatkinson/the-library-of-very-bad-bed-time-stories.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edwardatkinson/the-library-of-very-bad-bed-time-stories/issues"
+  },
+  "homepage": "https://github.com/edwardatkinson/the-library-of-very-bad-bed-time-stories#readme",
+  "dependencies": {}
+}

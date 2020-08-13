@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Welcome to The Library of Very Bad Bedtime Stories</title>
+</head>
+<body>
+
+
+<div class="container-md">
+<h1>Welcome to The Library of Very Bad Bed Time Stories</h1>
+
+<form id="regForm">
+
+  <!-- One "tab" for each step in the form: -->
+
+  <div class="tab character-object">
+    <p>Your First Name, Honorable Adventurer:</p>
+    <p><input placeholder="Name" class="firstName" autofocus></p>
+  </div>
+
+  <div class="tab character-object">
+    <p>Your Vehicle or Steed, Upon Which You Travel:</p>
+    <p><input class="vehicle" placeholder="Vehicle" autofocus></p>
+  </div>
+
+  <div class="tab character-object">
+    <p>Your Weapon for High Stakes Combat:</p>
+    <p><input class="weapon" placeholder="Weapon" autofocus></p>
+  </div>  
+
+  <div class="tab story-array">
+    <p>An Adjective, Describing Your Movement:</p>
+    <p><input class="movementAdj" placeholder="Movement adjective, ending in -ly" autofocus></p>
+  </div>
+
+  <div style="overflow:auto;">
+    <div style="float:right;">
+  <!--     <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+   -->    <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+          <button type="button" id="submitBtn">Begin Your Adventure</button>
+    </div>
+  </div>
+
+  <!-- Circles which indicates the steps of the form: -->
+  <div id="step-by-step" style="text-align:center;margin-top:40px;">
+  </div>
+
+</form>
+
+<!-- hidden story below reveals after form completes -->
+  <div class="hidden-story">
+    <p>
+      <span id="once-upon-a-time">Once upon a time</span>, there was a traveler named <span class="story-entry enter-firstName"></span>. The countryside demanded to be traveled, and so traveled it was.
+    </p>
+
+    <p>
+      <span class="story-entry enter-firstName"></span> rode all sides of the country upon a vigorous looking <span class="story-entry enter-vehicle"></span>, wielding a giant <span class="story-entry enter-weapon"></span> to conquer enemies.
+    </p>
+    <p>
+      Until one day, he <span class="story-entry enter-movementAdj"></span> arrived in town.
+    </p>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- run JS -->
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
